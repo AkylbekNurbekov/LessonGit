@@ -3,7 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello gitHub !!");
-        System.out.println("Hello gitHub !!");
+        Person person  = new Person();
+        person.setAge(20);
+        person.setName("Akylbek");
+
+        System.out.println(person.getAge()+" "+person.getName());
     }
 }
