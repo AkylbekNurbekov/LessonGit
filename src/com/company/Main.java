@@ -3,10 +3,16 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Person person  = new Person();
-        person.setAge(20);
-        person.setName("Akylbek");
+        Person person1 = new Person(20, "Akylbek");
+        Person person2 = new Person(21, "Talgarbek");
+        Person person3 = new Person(20, "Aman");
+        Person person4 = new Person(21, "Aktan");
 
-        System.out.println(person.getAge()+" "+person.getName());
+        Person[] persons = {person1, person2, person3, person4};
+
+        for (Person a : persons) {
+            System.out.println(a);
+
+        }
     }
 }
